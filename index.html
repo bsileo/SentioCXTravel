@@ -6,7 +6,13 @@
 
   <!-- Background image -->
   <style>
-    body {
+    page {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    page::before {
       background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg);
       background-size: cover;
       background-position: center;
@@ -40,7 +46,7 @@
 
     /* Links */
     a {
-      color: gray;
+      color: #2a9bff;
     }
 
     /* Body text */
@@ -66,33 +72,35 @@
 </head>
 <body>
   <!-- Logo -->
-  <img src="https://sentiocx.com/wp-content/uploads/2022/12/Sentio.svg" alt="SentioCX Logo" class="logo">
-
-  <!-- Header -->
-  <header>
-    <h1>SentioCX Travel</h1>
-  </header>
-
-  <!-- Main content -->
-  <main>
-    <h2>welcome to SentioCX Travel</h2>
-    <ol>
-      <li>If you can't plan your dream trip alone, perhaps our chatbot can help!</li>
-      <li>Book flights and accommodation.</li>
-      <li>Plan activities.</li>
-      <li>Pack your bags.</li>
-      <li>Enjoy your trip!</li>
-    </ol>
-
-    <p>Here are some additional resources for travel planning:</p>
-    <ul>
-      <li><a href="https://www.lonelyplanet.com/">Lonely Planet</a></li>
-      <li><a href="https://www.tripadvisor.com/">TripAdvisor</a></li>
-      <li><a href="https://www.travelandleisure.com/">Travel + Leisure</a></li>
-    </ul>
-
-    <!-- Live chat widget placeholder image -->
-    <div class="live-chat"></div>
-  </main>
+  <div id="page">
+    <img src="https://sentiocx.com/wp-content/uploads/2022/12/Sentio.svg" alt="SentioCX Logo" class="logo">
+  
+    <!-- Header -->
+    <header>
+      <h1>SentioCX Travel</h1>
+    </header>
+  
+    <!-- Main content -->
+    <main>
+      <h2>welcome to SentioCX Travel</h2>
+      <ol>
+        <li>If you can't plan your dream trip alone, perhaps our chatbot can help!</li>
+        <li>Book flights and accommodation.</li>
+        <li>Plan activities.</li>
+        <li>Pack your bags.</li>
+        <li>Enjoy your trip!</li>
+      </ol>
+  
+      <p>Here are some additional resources for travel planning:</p>
+      <ul>
+        <li><a href="https://www.lonelyplanet.com/">Lonely Planet</a></li>
+        <li><a href="https://www.tripadvisor.com/">TripAdvisor</a></li>
+        <li><a href="https://www.travelandleisure.com/">Travel + Leisure</a></li>
+      </ul>
+  
+      <!-- Live chat widget placeholder image -->
+      <div class="live-chat"></div>
+    </main>
+  </div>
 </body>
 </html>
