@@ -33,8 +33,32 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100px;
-      height: 100px;
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Links */
+    a {
+      color: gray;
+    }
+
+    /* Body text */
+    body {
+      font-size: 1.5em;
+      text-indent: 20px;
+    }
+
+    /* Live chat widget placeholder image */
+    .live-chat {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-image: url(./live-chat-widget-placeholder.png);
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -64,6 +88,9 @@
       <li><a href="https://www.tripadvisor.com/">TripAdvisor</a></li>
       <li><a href="https://www.travelandleisure.com/">Travel + Leisure</a></li>
     </ul>
+
+    <!-- Live chat widget placeholder image -->
+    <div class="live-chat"></div>
   </main>
 </body>
 </html>
