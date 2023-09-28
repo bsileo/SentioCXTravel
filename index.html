@@ -6,41 +6,50 @@
 
   <!-- Background image -->
   <style>
-    page {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg);
+    .page {
+      position: relative; 
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   
+    .page::before {
+      content: "";
+      background-image: url(' https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg');
       background-size: cover;
-      background-position: center;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
     }
 
-    page::before {
-      background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg);
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* Font color */
-    body {
-      color: white;
-    }
 
     /* Header */
     header {
       text-align: center;
-      height: 150px
+      height: 150px;
+      position: absolute;
+      top: 0px;
+      left:50%;
     }
 
     /* Page title */
     header h1 {
       font-size: 40px;
       font-weight: bold;
+      color: #2e2eff;
     }
 
     /* Logo */
     .logo {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 30%;
+      left: 10px;
+      width: 25%;
       height: 100px;
     }
 
@@ -51,9 +60,17 @@
 
     /* Body text */
     body {
+      color: white;
+      background-color: rgb(222, 217, 217);
+    }
+
+    main {
       font-size: 1.5em;
       text-indent: 20px;
       margin-left: 3em;
+      color: white;
+      position: absolute;
+      top: 100px; 
     }
 
     /* Live chat widget placeholder image */
@@ -71,18 +88,16 @@
   </style>
 </head>
 <body>
+  <div class="page">
   <!-- Logo -->
-  <div id="page">
     <img src="https://sentiocx.com/wp-content/uploads/2022/12/Sentio.svg" alt="SentioCX Logo" class="logo">
-  
     <!-- Header -->
     <header>
       <h1>SentioCX Travel</h1>
     </header>
-  
     <!-- Main content -->
     <main>
-      <h2>welcome to SentioCX Travel</h2>
+      <h2>Welcome to SentioCX Travel</h2>
       <ol>
         <li>If you can't plan your dream trip alone, perhaps our chatbot can help!</li>
         <li>Book flights and accommodation.</li>
@@ -101,6 +116,6 @@
       <!-- Live chat widget placeholder image -->
       <div class="live-chat"></div>
     </main>
-  </div>
+  <div/>
 </body>
 </html>
