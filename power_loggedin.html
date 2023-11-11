@@ -105,9 +105,42 @@
 
     }
   </style>
+  <script>
+    window.onload = function(e){ 
+      const names = [
+              "Neo",
+              "Luke",
+              "Harry",
+              "Tony",
+              "Peter",
+              "Indiana",
+              "Ellen Ripley",
+              "Sarah Connor",
+              "John McClane",
+              "Marty McFly",
+              "Forrest Gump",
+              "Atticus Finch",
+              "Annie Wilkes",
+              "Clarice Starling",
+              "Joker",
+              "Darth Vader",
+              "Han Solo",
+              "Leia Organa",
+              "R2-D2",
+              "C-3PO",
+              "Chewbacca",
+              "Gollum",
+              "Shrek",
+            ];
+      var name = names[Math.floor(Math.random() * names.length)] // pick random item
+      document.title = name + ' - Sentio/Power'
+      document.getElementById("username").innerHTML = name;
+    }
+
+  </script>
 </head>
 <div>
-  <div class="page">
+  <span class="page">
   <!-- Logo -->
     <img src="https://sentiocx.com/wp-content/uploads/2022/12/Sentio.svg" alt="SentioCX Logo" class="logo">
     <!-- Header -->
@@ -117,7 +150,7 @@
     <div class="user-icon">G</div>
     <!-- Main content -->
     <main>
-      <h2>Hello <strong>George</strong>!</h2>
+      <h2>Hello <strong><span id="username">George</span></strong>!</h2>
         <h3>About your account:</h3>
       <ol>
         <li>Monthly Usage: <strong style="color:red">High</strong></li>
